@@ -56,10 +56,10 @@ main{
     outline: 2px solid hsl(172, 67%, 45%);
 }
 .section1 #bill::placeholder{
-    color: hsl(184, 14%, 56%);
+    color: hsl(185, 32%, 79%);
 }
 .section1 #no-people::placeholder{
-    color: hsl(184, 14%, 56%);
+    color: hsl(185, 32%, 79%);
 }
 .section1 img{
     position: absolute;
@@ -138,7 +138,7 @@ div{
 .section2 .person{
     display: inline-block;
     font-size: 13px;
-    color: hsl(186, 14%, 43%);
+    color: hsl(185, 32%, 79%);
     padding-bottom: 4px;
 }
 .last-amount{
