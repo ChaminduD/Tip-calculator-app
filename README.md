@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-using-mobilefirst-workflow-eoKyhuTuPT)
+- Live Site URL: [Live site URL here](https://chamindud.github.io/Tip-calculator-app/)
 
 ## My process
 
