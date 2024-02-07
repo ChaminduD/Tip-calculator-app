@@ -2,43 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <img src="images/logo.svg" alt="">
+  </header>
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <main>
+    <form id="form">
+      <section class="section1">
+        <h1>Bill</h1>
+        <img src="images/icon-dollar.svg" alt="dollar icon">
+        <input type="number" name="bill" id="bill" placeholder="0" min="1">
   
-  <div class="attribution">
+        <h3>Select Tip %</h3>
+
+        <div>
+          <label for="five">
+            <input type="radio" name="percent" id="five" class="radio">
+            <span class="tip">5%</span>
+          </label>
+          <label for="ten">
+            <input type="radio" name="percent" id="ten" class="radio">
+            <span class="tip">10%</span>
+          </label>
+          <label for="fifteen">
+            <input type="radio" name="percent" id="fifteen" class="radio">
+            <span class="tip">15%</span>
+          </label>
+          <label for="twenty-five">
+            <input type="radio" name="percent" id="twenty-five" class="radio">
+            <span class="tip">25%</span>
+          </label>
+          <label for="fifty">
+            <input type="radio" name="percent" id="fifty" class="radio">
+            <span class="tip">50%</span>
+          </label>
+          <label for="custom">
+            <input type="radio" name="percent" id="custom" class="radio">
+            <span class="tip" id="custom-span">
+              <input type="number" name="percent" id="custom-input" placeholder="Custom" min="1" max="99" maxlength="2">
+            </span>
+          </label>
+        </div>
+        
+
+        <h3>Number of People</h3>
+        <span id="error">Can't be zero</span>
+        <img src="images/icon-person.svg" alt="person icon">
+        <input type="number" name="no-people" id="no-people" min="1" placeholder="0">
+      </section>
+
+      <section class="section2">
+        <h3>Tip Amount</h3>
+        <span class="person">/ person</span>
+        <span id="tip-amount" class="last-amount">$0.00</span>
+
+        <h3>Total</h3>
+        <span class="person">/ person</span>
+        <span id="total" class="last-amount">$0.00</span>
+
+        <button type="reset" id="reset-btn" disabled>Reset</button>
+      </section>
+    </form>
+  </main>
+  
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.linkedin.com/in/chamindudahanayaka/">Chamindu Dahanayaka</a>.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
